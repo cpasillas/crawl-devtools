@@ -1,0 +1,4 @@
+When adding a new version:
+* prob need to create saves and rcs dir in data?
+* update config for new version in config.py (web config)
+* update player init script for new version so dirs get created (like ttyrec, etc) (web config)
