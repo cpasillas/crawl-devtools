@@ -1,6 +1,6 @@
 #!/bin/bash
 START_SECS=`date +%s` 
-DEVDIR=/home/chris/dev
+DEVDIR=/Users/cpasillas/cdev
 OUTDIR=$DEVDIR/crawlout
 DATADIR=$DEVDIR/local-crawl-data
 CRAWLROOT=$DEVDIR/crawl
@@ -14,7 +14,7 @@ cd $CRAWLROOT
 git checkout turkey-0.20
 git submodule update --init
 cd $CRAWLSRC
-make -j 4 WEBTILES=y SAVEDIR=saves/
+make -j 2 WEBTILES=y SAVEDIR=saves/
 cp crawl $OUTDIR/turkey-0.20
 cp -R dat $OUTDIR/turkey-0.20
 cp -R webserver $OUTDIR
