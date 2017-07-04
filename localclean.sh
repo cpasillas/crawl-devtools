@@ -14,11 +14,8 @@ cd $CRAWLROOT
 git checkout turkey-0.20
 git submodule update --init
 cd $CRAWLSRC
-make -j 4 WEBTILES=y SAVEDIR=saves/
-cp crawl $OUTDIR/turkey-0.20
-cp -R dat $OUTDIR/turkey-0.20
-cp -R webserver $OUTDIR
+make clean
 
 END_SECS=`date +%s` 
-echo "*************** TOTAL BUILD TIME IN SECONDS:"
+echo "*************** TOTAL CLEAN TIME IN SECONDS:"
 echo `expr $END_SECS - $START_SECS`
